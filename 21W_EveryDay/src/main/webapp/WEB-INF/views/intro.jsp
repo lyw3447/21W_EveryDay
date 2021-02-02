@@ -486,7 +486,7 @@ a {
 		</div>
 		<div class="btn">
 			<button type="button" class="login" onclick="location.href='login'">로그인</button>
-			<button type="button" class="signup" onclick="location.href='#'">에브리데이
+			<button type="button" class="signup" onclick="location.href='signup'">에브리데이
 				회원가입</button>
 		</div>
 

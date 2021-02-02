@@ -109,7 +109,7 @@ a {
 			<button type='submit'>로그인</button>
 		</form>
 		<p style="color: grey">
-			에브리데이에 처음이신가요? <a href="../signup">회원가입</a>
+			에브리데이에 처음이신가요? <a href="signup">회원가입</a>
 		</p>
 	</div>
 
