@@ -8,6 +8,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import com.mycompany.myapp.csee.CseeVO;
 import com.mycompany.myapp.member.MemberServiceImpl;
 import com.mycompany.myapp.member.MemberVO;
 
@@ -31,6 +32,15 @@ public class LoginController {
 	@RequestMapping(value="/signup", method=RequestMethod.GET)
 	public String signup(String t, Model model) {
 		return "signup";
+	}
+	
+	@RequestMapping(value = "/signupok", method = RequestMethod.POST)
+	public String signupOK(MemberVO vo) {
+		if (service.insertMember(vo) == 0)
+			System.out.println("회원가입 실패 ");
+		else
+			System.out.println("회원가입 성공!!!");
+		return "redirect:login";
 	}
 	
 	@RequestMapping(value="/loginOk",method=RequestMethod.POST) 

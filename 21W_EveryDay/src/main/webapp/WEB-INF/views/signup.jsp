@@ -7,22 +7,23 @@
 <title>EveryDay</title>
 </head>
 <body>
-  
-	<h1>SignUp page</h1>  
+  	<form method="post" action="signupok">
 	 
-	<table>  
-	<tr><td>Id:</td><td><input type="text" name="userid"/></td></tr>  
-	
-	<tr><td>Password:</td><td>  
-	<input type="password" name="password"/></td></tr> 
-	
-	<tr><td>NickName:</td><td>  
-	<input type="text" name="username"/></td></tr> 
-	
-	<tr><td>Email:</td><td><input type="email" name="email"/></td></tr>  
-	
-	<tr><td colspan="2"><input type="submit" value="Sign Up"/></td></tr>  
-	</table>  
+		<table>  
+		<tr><td>Id:</td><td><input type="text" name="userid"/></td></tr>  
+		
+		<tr><td>Password:</td><td>  
+		<input type="password" name="password"/></td></tr> 
+		
+		<tr><td>NickName:</td><td>  
+		<input type="text" name="username"/></td></tr> 
+		
+		<tr><td>Email:</td><td><input type="email" name="email"/></td></tr>  
+		
+		<tr><td colspan="2"><input type="submit" value="Sign Up"/></td></tr>  
+		</table>  
+  	
+  	</form>
 
 </body>
 </html>
