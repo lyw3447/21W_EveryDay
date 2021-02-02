@@ -28,6 +28,11 @@ public class LoginController {
 		return "login";
 	}
 	
+	@RequestMapping(value="/signup", method=RequestMethod.GET)
+	public String signup(String t, Model model) {
+		return "signup";
+	}
+	
 	@RequestMapping(value="/loginOk",method=RequestMethod.POST) 
 	public String loginCheck(HttpSession session,MemberVO vo){
 		String returnURL = "";
