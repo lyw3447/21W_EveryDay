@@ -11,4 +11,9 @@ public class MemberServiceImpl {
 	public MemberVO getMember(MemberVO vo) {
 		return memberDAO.getMember(vo);
 	}
+	
+	public int insertMember(MemberVO vo) {
+		return memberDAO.insertMember(vo);
+	}
+	
 }

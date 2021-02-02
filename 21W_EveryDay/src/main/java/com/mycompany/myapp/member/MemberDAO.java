@@ -13,4 +13,9 @@ public class MemberDAO {
 	public MemberVO getMember(MemberVO vo) {
 		return sqlSession.selectOne("Member.getMember", vo);
 	}
+	
+	public int insertMember(MemberVO vo) {
+		int result = sqlSession.insert("Member.insertMember", vo);
+		return result;
+	}
 }
