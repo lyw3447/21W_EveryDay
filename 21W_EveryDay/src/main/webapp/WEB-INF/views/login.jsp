@@ -41,10 +41,6 @@ input {
 	margin: 2px;
 }
 
-input:focus {
-	outline: none;
-}
-
 button {
 	width: 306px;
 	height: 30px;
@@ -52,6 +48,10 @@ button {
 	color: white;
 	border: none;
 	margin: 2px;
+}
+
+button:focus {
+	outline: none;
 }
 
 p a {
