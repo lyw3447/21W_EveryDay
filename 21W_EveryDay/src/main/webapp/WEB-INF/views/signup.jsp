@@ -11,12 +11,16 @@
   box-sizing: border-box;
 }
 
+.top {
+	padding-left: 40px;
+}
+
 .container {
   border-radius: 5px;
-  padding: 20px;
-  margin: 0px 100px;
+  padding: 30px;
+  margin: 0px 10%;
+  text-align: center;
   display: inline-block;
-  text-align : center;
 }
 
 body {
@@ -43,7 +47,6 @@ input[type=submit] {
   padding: 12px 20px;
   border: none;
   cursor: pointer;
-  float: right;
 }
 
 input[type=submit]:hover {
@@ -52,12 +55,19 @@ input[type=submit]:hover {
 
 .signup{
 	text-align: center;
-	margin-top: 15%;
+	position: absolute;
+    height: 300px;
+    width: 400px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 .fa-calendar { /*Logo*/
 	color: #c12525;
-	padding: 0 50px 10px 0;
+	padding-right: 10px;
 }
 
 .top p {
@@ -123,12 +133,18 @@ a {
     float: left;
 	width: 100px;
     height:auto;
+    display: inline-block;
     text-align: left;
 }
 
 .right{
     float: left;
     height:auto;
+    display: inline-block;
+}
+
+.row {
+	
 }
 
 .row:after {
