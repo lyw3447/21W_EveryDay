@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8" name="google-signin-client_id" content="614414049636-vmoicaro2j8pqts15mto327u6cm9p5u0.apps.googleusercontent.com">
 <title>EveryDay</title>
 <style>
 body {
@@ -96,8 +96,18 @@ a {
 <!--favicon 설정 -->
 <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
 <!--favicon 설정 -->
+<script>
+function onSignIn(googleUser) {
+	  var profile = googleUser.getBasicProfile();
+	  console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+	  console.log('Name: ' + profile.getName());
+	  console.log('Image URL: ' + profile.getImageUrl());
+	  console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+	}
+</script>
 </head>
 <body>
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
 	<!-- <img src='../img/snowman.jpg' height="250"> -->
 	<div class="login">
 		<div class="top">
@@ -116,6 +126,9 @@ a {
 			</div>
 			<button type='submit'>로그인</button>
 		</form>
+		
+		<div class = "g-signin2" data-onsuccess="onSignIn"></div>
+		
 		<p style="color: grey">
 			에브리데이에 처음이신가요? <a href="signup">회원가입</a>
 		</p>
