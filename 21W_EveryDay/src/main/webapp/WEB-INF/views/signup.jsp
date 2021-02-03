@@ -44,7 +44,7 @@ input[type=text], [type=password], [type=email] {
 input[type=submit] {
   background-color: #c12525;
   color: white;
-  padding: 12px 20px;
+  padding: 5px 20px;
   border: none;
   cursor: pointer;
 }
