@@ -13,9 +13,10 @@
 
 .container {
   border-radius: 5px;
-  background-color: #f2f2f2;
   padding: 20px;
   margin: 0px 100px;
+  display: inline-block;
+  text-align : center;
 }
 
 body {
@@ -26,13 +27,13 @@ body {
 label {
   padding: 12px 12px 12px 0;
   display: inline-block;
+  
 }
 
 input[type=text], [type=password], [type=email] {
-  width: 50%;
+  width: 200px;
   padding: 12px;
   border: 1px solid #ccc;
-  border-radius: 4px;
   resize: vertical;
 }
 
@@ -41,7 +42,6 @@ input[type=submit] {
   color: white;
   padding: 12px 20px;
   border: none;
-  border-radius: 4px;
   cursor: pointer;
   float: right;
 }
@@ -52,7 +52,7 @@ input[type=submit]:hover {
 
 .signup{
 	text-align: center;
-	margin-top: 20%;
+	margin-top: 15%;
 }
 
 .fa-calendar { /*Logo*/
@@ -121,13 +121,13 @@ a {
 
 .left{
     float: left;
-    width: 20%;
+	width: 100px;
     height:auto;
+    text-align: left;
 }
 
 .right{
     float: left;
-    width: 80%;
     height:auto;
 }
 
