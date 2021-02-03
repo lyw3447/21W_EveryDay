@@ -11,16 +11,21 @@
   box-sizing: border-box;
 }
 
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-  margin: 0px 100px;
-}
-
 body {
 	margin: 0;
 	font-family: "맑은 고딕", 돋움, tahoma;
+}
+
+.top {
+	padding-left: 40px;
+}
+
+.container {
+  border-radius: 5px;
+  padding: 30px;
+  margin: 0px 10%;
+  text-align: center;
+  display: inline-block;
 }
 
 label {
@@ -29,7 +34,7 @@ label {
 }
 
 input[type=text], [type=password], [type=email] {
-  width: 50%;
+  width: 200px;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -43,7 +48,7 @@ input[type=submit] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  float: right;
+
 }
 
 input[type=submit]:hover {
@@ -52,12 +57,19 @@ input[type=submit]:hover {
 
 .signup{
 	text-align: center;
-	margin-top: 20%;
+	position: absolute;
+    height: 300px;
+    width: 400px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 .fa-calendar { /*Logo*/
 	color: #c12525;
-	padding: 0 50px 10px 0;
+	padding-right: 10px;
 }
 
 .top p {
@@ -121,14 +133,19 @@ a {
 
 .left{
     float: left;
-    width: 20%;
-    height:auto;
+    width: 100px;
+    display: inline-block;
+    text-align: left;
 }
 
 .right{
     float: left;
-    width: 80%;
     height:auto;
+    display: inline-block;
+}
+
+.row {
+	
 }
 
 .row:after {
