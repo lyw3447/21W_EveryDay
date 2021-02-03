@@ -15,7 +15,7 @@
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
-  margin: 100px 0px;
+  margin: 0px 100px;
 }
 
 body {
