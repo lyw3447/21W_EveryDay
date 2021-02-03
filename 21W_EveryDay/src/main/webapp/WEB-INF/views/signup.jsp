@@ -182,47 +182,47 @@ a {
 	   	
 	   		<div class="row">
 		   		<div class="left">
-	      			<label for="fname">Id : </label>
+	      			<label for="fname">아이디 : </label>
 	    		</div>
 	    		
 	    		<div class="right">
-	      			<input  type="text" name="userid" placeholder="Your id..">
+	      			<input  type="text" name="userid" placeholder="ID">
 	    		</div>
 	   		</div>
 	   	
 	   	
 	   		<div class="row">
 		   		<div class="left">
-	      			<label for="fname">Password : </label>
+	      			<label for="fname">비밀번호 : </label>
 	    		</div>
 	    		
 	    		<div class="right">
-	      			<input type="password" name="password" placeholder="Your password..">
+	      			<input type="password" name="password" placeholder="Password">
 	    		</div>	
 	   		</div>
 	   	
 	   	
 		   	<div class="row">
 		   		<div class="left">
-	      			<label for="fname">Nickname : </label>
+	      			<label for="fname">닉네임 : </label>
 	    		</div>
 	    		
 	    		<div class="right">
-	      			<input type="text" name="username" placeholder="Your nickname..">
+	      			<input type="text" name="username" placeholder="닉네임">
 	    		</div>
 		   	</div>
 		   	
 		   	<div class="row">
 		   		<div class="left">
-	      			<label for="fname">Email : </label>
+	      			<label for="fname">이메일 : </label>
 	    		</div>
 	    		
 	    		<div class="right">
-	      			<input type="email" name="email" placeholder="Your email..">
+	      			<input type="email" name="email" placeholder="이메일">
 	    		</div>
 		   	</div>
 	   	
-			<div class="row"><input type="submit" value="Sign Up"/></div>
+			<div class="row"><input type="submit" value="회원가입하기"/></div>
 			
 			</form>
 			
