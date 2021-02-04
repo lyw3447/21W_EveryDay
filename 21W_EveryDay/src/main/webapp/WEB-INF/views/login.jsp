@@ -54,6 +54,10 @@ button:focus {
 	outline: none;
 }
 
+.google {
+	margin: 2px 47px;
+}
+
 p a {
 	color: #c12525;
 	font-weight: bold;
@@ -136,8 +140,7 @@ function signOut() {
 			</div>
 			<button type='submit'>로그인</button>
 		</form>
-	
-			
+		
 			<div class = "g-signin2" id="google_id_login" style="text-align:center">
 				<a href="${google_url}">
 				</a>
