@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import com.mycompany.myapp.csee.CseeService;
 import com.mycompany.myapp.member.MemberServiceImpl;
 import com.mycompany.myapp.member.MemberVO;
 
@@ -25,9 +26,12 @@ public class LoginController {
 	@Autowired
 	MemberServiceImpl service;
 	@Autowired
+	CseeService cseeService;
+	@Autowired
 	private GoogleConnectionFactory googleConnectionFactory;
 	@Autowired
 	private OAuth2Parameters googleOAuth2Parameters;
+	
 
 	@RequestMapping(value = "/intro", method = RequestMethod.GET)
 	public String intro(String t, Model model) {
@@ -49,11 +53,14 @@ public class LoginController {
 	}
 
 	// 구글 Callback호출 메소드
-	@RequestMapping(value = "/oauth2callback", method = { RequestMethod.GET, RequestMethod.POST })
-	public String googleCallback(Model model, @RequestParam String code) throws IOException {
-		System.out.println("여기는 googleCallback");
+	@RequestMapping(value = "/oauth2callback", method = RequestMethod.GET)
+	public String googleCallback(Model model, @RequestParam(required = false) String code) throws IOException {
 
-		return "";
+		System.out.println("여기는 googleCallback");
+		model.addAttribute("list", cseeService.getCseeList());
+
+		return "cseelist";
+
 	}
 
 	@RequestMapping(value = "/signup", method = RequestMethod.GET)

@@ -3,7 +3,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8" name="google-signin-client_id" content="614414049636-vmoicaro2j8pqts15mto327u6cm9p5u0.apps.googleusercontent.com">
+<meta charset="UTF-8" name="google-signin-client_id"
+	content="614414049636-vmoicaro2j8pqts15mto327u6cm9p5u0.apps.googleusercontent.com">
 <title>EveryDay</title>
 <style>
 body {
@@ -15,13 +16,13 @@ body {
 .login {
 	text-align: center;
 	position: absolute;
-    height: 300px;
-    width: 400px;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
+	height: 300px; width : 400px; top : 0; bottom : 0; left : 0; right : 0;
+	margin: auto;
+	width: 400px;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
 }
 
 .fa-calendar { /*Logo*/
@@ -54,8 +55,11 @@ button:focus {
 	outline: none;
 }
 
-.google {
-	margin: 2px 47px;
+#google_id_login {
+	width: 306px;
+	padding: 5px 0;
+	background-color: #eb4c42;
+	margin-left: 47px;
 }
 
 p a {
@@ -101,20 +105,13 @@ a {
 <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
 <!--favicon 설정 -->
 <script>
-function onSignIn(googleUser) {
-	  var profile = googleUser.getBasicProfile();
-	  console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
-	  console.log('Name: ' + profile.getName());
-	  console.log('Image URL: ' + profile.getImageUrl());
-	  console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+	function onSignIn(googleUser) {
+		var profile = googleUser.getBasicProfile();
+		console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+		console.log('Name: ' + profile.getName());
+		console.log('Image URL: ' + profile.getImageUrl());
+		console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
 	}
-	
-function signOut() {
-    var auth2 = gapi.auth2.getAuthInstance();
-    auth2.signOut().then(function () {
-      console.log('User signed out.');
-    });
-  }
 </script>
 </head>
 <body>
@@ -137,10 +134,11 @@ function signOut() {
 			</div>
 			<button type='submit'>로그인</button>
 		</form>
-		
-		<div class = "g-signin2 google" data-width="306" data-height="30" data-onsuccess="onSignIn"></div>
-		<a href="#" onclick="signOut();">Sign out</a>
-		
+
+		<div id="google_id_login" style="text-align: center">
+			<a href="${google_url}" style="color: white;"><i class="fa fa-google" aria-hidden="true"></i> Google Login</a>
+		</div>
+
 		<p style="color: grey">
 			에브리데이에 처음이신가요? <a href="signup">회원가입</a>
 		</p>
