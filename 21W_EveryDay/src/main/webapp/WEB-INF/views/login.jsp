@@ -54,6 +54,10 @@ button:focus {
 	outline: none;
 }
 
+.google {
+	margin: 2px 47px;
+}
+
 p a {
 	color: #c12525;
 	font-weight: bold;
@@ -134,7 +138,7 @@ function signOut() {
 			<button type='submit'>로그인</button>
 		</form>
 		
-		<div class = "g-signin2" data-onsuccess="onSignIn"></div>
+		<div class = "g-signin2 google" data-width="306" data-height="30" data-onsuccess="onSignIn"></div>
 		<a href="#" onclick="signOut();">Sign out</a>
 		
 		<p style="color: grey">
