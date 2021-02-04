@@ -36,7 +36,7 @@ public class LoginController {
 	}
 	
 	@RequestMapping(value="/login", method=RequestMethod.GET)
-	public String login(String t, Model model) {
+	public String login(Model model, HttpSession session) {
 		
 		/* 구글code 발행 */
 		OAuth2Operations oauthOperations = googleConnectionFactory.getOAuthOperations();
@@ -51,8 +51,11 @@ public class LoginController {
 	
 	// 구글 Callback호출 메소드
 		@RequestMapping(value = "/oauth2callback", method = { RequestMethod.GET, RequestMethod.POST })
-		public String googleCallback(Model model, @RequestParam String code) throws IOException {
+		public String googleCallback(Model model, @RequestParam(required=false) String code) throws IOException {
+			
+			
 			System.out.println("여기는 googleCallback");
+		
 
 			return "cseelist";
 		}

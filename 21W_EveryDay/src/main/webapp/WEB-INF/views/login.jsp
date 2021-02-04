@@ -103,13 +103,16 @@ function onSignIn(googleUser) {
 	  console.log('Name: ' + profile.getName());
 	  console.log('Image URL: ' + profile.getImageUrl());
 	  console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
-	}
+
+
+}
 	
 function signOut() {
     var auth2 = gapi.auth2.getAuthInstance();
     auth2.signOut().then(function () {
       console.log('User signed out.');
     });
+    auth2.disconnect();
   }
 </script>
 </head>
@@ -133,9 +136,14 @@ function signOut() {
 			</div>
 			<button type='submit'>로그인</button>
 		</form>
-		
-		<div class = "g-signin2" data-onsuccess="onSignIn"></div>
-		<a href="#" onclick="signOut();">Sign out</a>
+	
+			
+			<div class = "g-signin2" id="google_id_login" style="text-align:center">
+				<a href="${google_url}">
+				</a>
+			</div>
+			
+			<a href="#" onclick="signOut();">Sign out</a>
 		
 		<p style="color: grey">
 			에브리데이에 처음이신가요? <a href="signup">회원가입</a>
