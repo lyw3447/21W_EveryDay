@@ -389,6 +389,14 @@ span {
 		});
 
 	});
+	
+	function signOut() {
+	    var auth2 = gapi.auth2.getAuthInstance();
+	    auth2.signOut().then(function () {
+	      console.log('User signed out.');
+	    });
+	    auth2.disconnect();
+	  }
 </script>
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -419,8 +427,8 @@ span {
 		<div class="icons">
 			<i class="fa fa-envelope-o icon" aria-hidden="true"></i>
 			<div class="hv">
-				<i class="fa fa-user-o icon" aria-hidden="true"></i> <a
-					href="../login/logout" class="logout">로그아웃</a>
+				<i class="fa fa-user-o icon" aria-hidden="true"></i> 
+				<a href="../login/logout" class="logout" onclick="signOut();">로그아웃</a>
 			</div>
 
 		</div>

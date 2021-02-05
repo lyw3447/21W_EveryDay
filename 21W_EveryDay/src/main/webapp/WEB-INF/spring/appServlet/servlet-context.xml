@@ -56,7 +56,7 @@
 		<beans:property name="scope"
 			value="https://www.googleapis.com/auth/plus.login" />
 		<beans:property name="redirectUri"
-			value="http://localhost:8080/myapp/login/oauth2callback" />
+			value="http://localhost:8080/myapp/login/oauth2callback"/>
 	</beans:bean>
 
 </beans:beans>
