@@ -46,9 +46,9 @@
 	<beans:bean id="googleConnectionFactory"
 		class="org.springframework.social.google.connect.GoogleConnectionFactory">
 		<beans:constructor-arg
-			value="614414049636-vmoicaro2j8pqts15mto327u6cm9p5u0.apps.googleusercontent.com" />
+			value="-" />
 		<beans:constructor-arg
-			value="tcD5KS3cmZojZRHPwvoiS5Gy" />
+			value="-" />
 	</beans:bean>
 	<!-- 승인된 자바스크립트 원본과 승인된 리디렉션 URI -->
 	<beans:bean id="googleOAuth2Parameters"
